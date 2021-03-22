@@ -1,0 +1,82 @@
+<apex:page >
+    aura:component: 
+    ----------------
+    1. aura is a namespace 
+    2. component is a pre-defined element in the lightning
+    3. Components are the functional units of Aura,
+    	which encapsulate modular and reusable sections of UI. 
+    4. They can contain other components ( standard /Custom) or HTML markup. 
+    5. Component will have extention of ".cmp" 
+    6. Component will come as bundle 
+    	 	 1. Component 		(xml)
+    		 2. Controller  	(javascript)
+    		 3. Helper 			(javascript)
+    		 4. Style 			(CSS)
+    		 5. Documentation	(Documentation)
+    		 6. Renderer		( Javascript)
+    		 7. SVG 			( ICON)
+    		 8. Design			(xml)
+    
+    7. Attributes : 
+    	a. access  : 
+    	   1. This will specify the scope of the Component 
+    	   2. Possible values :; 
+    			a. public : if we define access as public this component can be used with in the 
+    						namespace only;
+    			
+    			b. global : if we define access as global ,this Component can be used with in the 
+    						namespace and outside the namespace.
+    
+    	b. controller : 
+   			1. This will specify the name of the apex class which we want to use in the Component.
+    		2. Only one controller can be used.
+    
+    	c. description :
+    		1. This will specify the description of the Component
+    
+    	d. extends : 
+    		1. Lightning component can extend another Component .
+    		2. Only one component can be extended.
+    		3. extends="namespace:component"
+    
+    	e. extensible :
+    		1. it is a boolean value.
+    		2. When set as true, this component can be extended by another application .
+    
+    	f. implements :
+    		1. This will specify name of the interfaces that component is implementing 
+    		2. Component can implement more than one interface.
+    
+    	g. template : 
+    		1. This will specify the name of the custom tempalte that your component want to 
+    			extend'
+    
+    	h. tokens: 
+    		1. This will specify the name of the tokens which we want to extend in the component
+    		2. component can extentd more than one token.
+    
+    8. Navigation 	
+    	Setup
+    	|--- > Developer Console
+    		   |--- > File 
+    				  |--- > New 
+    						 |--- > Lightning Component
+    
+    9. How to preview the lightnig component 
+    	a. Invoke the component from application and view 
+    	b. Create a Lightning component tab and view 
+    	c. Add the lightning component to Record page /Home page /App Page and view
+    
+    
+    10. How to invoke the component in the application 
+    	<!--
+			<namespace:componentName   />
+			Example : 
+			<capital:FirstExample />
+
+			Note : if namespace is not created then default namespace will be applied 
+			<c:FirstExample />
+		-->
+    
+    
+</apex:page>

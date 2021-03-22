@@ -1,0 +1,75 @@
+<apex:page >
+    aura:application :
+    -------------------
+    1. aura is a namespace 
+    2. application is pre-defined component
+    3. Every lightnintg application will start and end with aura:application
+    4. Every page is called application 
+    5. Every application is called as page.
+    6. Lightning application will have an extention of ".app"
+    	Example : Example.app
+    7. Every element in the application should obey strict xml format.
+    8. Navigation :
+    	Setup
+    	|--- > Developer Console
+    		   |--- > File 
+    				  |--- > New 
+    						 |--- > Lightning Application 
+    
+    	Step 1: Enter name : First _Example
+    	Step 2: Save 
+    
+    9. Note : When ever we create lightning application it comes with bundle of elements 
+    		 1. Application 	(xml)
+    		 2. Controller  	(javascript)
+    		 3. Helper 			(javascript)
+    		 4. Style 			(CSS)
+    		 5. Documentation	(Documentation)
+    		 6. Renderer		( Javascript)
+    		 7. SVG 			( ICON)
+    
+    10. Attributes :  
+    	a. access  : 
+    	   1. This will specify the scope of the application 
+    	   2. Possible values :; 
+    			a. public : if we define access as public this application can be used with in the 
+    						namespace only;
+    			
+    			b. global : if we define access as global ,this application can be used with in the 
+    						namespace and outside the namespace.
+    
+    	b. controller : 
+   			1. This will specify the name of the apex class which we want to use in the application.
+    		2. Only one controller can be used.
+    
+    	c. description :
+    		1. This will specify the description of the application
+    
+    	d. extends : 
+    		1. Lightning application can extend another application .
+    		2. Only one application can be extended.
+    		3. extends="namespace:applicationName"
+    
+    	e. extensible :
+    		1. it is a boolean value.
+    		2. When set as true, this application can be extended by another application .
+    
+    	f. implements :
+    		1. This will specify name of the interfaces that application is implementing 
+    		2. Application can implement more than one interface.
+    
+    	g. tempate : 
+    		1. This will specify the name of the custom tempalte that your application want to 
+    			extend'
+    
+    	h. tokens: 
+    		1. This will specify the name of the tokens which we want to extend in the application
+    		2. Application can extent more than one token.
+    
+    10. URL for application 
+    	domainname /namespace/applicationname.app
+    
+    	Note : if namespace is not created then custom namespace will be applied 
+    			"c"
+    			https://domainname/c/First_Example.app
+</apex:page>
